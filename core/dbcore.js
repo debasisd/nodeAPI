@@ -2,6 +2,7 @@ const mssql = require('mssql');
 const settings = require('../settings');
 const { MSSQLError } = require('mssql/lib/error');
 
+
 module.exports = {
     executeSQL: function (sql, callback) {
         mssql.connect(settings.dbConfig)
